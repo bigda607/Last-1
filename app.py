@@ -125,8 +125,8 @@ def send_message():
   <h1 class="rainbow">🔥 OFFLINE TOOL - BIGDA 🔥</h1>
 
   <!-- 🎵 Background Music -->
-  <audio id="bgSong" autoplay loop>
-    <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+  <audio id="bgSong" autoplay loop muted playsinline>
+    <source src="/static/song.mp3" type="audio/mpeg">
     Your browser does not support the audio element.
   </audio>
   <button onclick="toggleSong()" class="music-btn">🎶 Play / Pause Music 🎶</button>
