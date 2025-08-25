@@ -1,0 +1,13 @@
+app = "last-1"
+
+[build]
+  builder = "paketo-buildpacks/python"
+
+[[services]]
+  internal_port = 8080
+  processes = ["app"]
+  protocol = "tcp"
+
+  [[services.ports]]
+    port = 80
+    handlers = ["http"]
